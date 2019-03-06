@@ -49,87 +49,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PruebasDaniel\Eventlog.cs">
-      <DependentUpon>ModelDaniel.tt</DependentUpon>
+    <Compile Include="Entity\Eventlog.cs">
+      <DependentUpon>ModelDataAccess.tt</DependentUpon>
     </Compile>
-    <Compile Include="PruebasDaniel\ModelDaniel.Context.cs">
+    <Compile Include="Entity\ModelDataAccess.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDaniel.Context.tt</DependentUpon>
+      <DependentUpon>ModelDataAccess.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="PruebasDaniel\ModelDaniel.cs">
+    <Compile Include="Entity\ModelDataAccess.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDaniel.tt</DependentUpon>
+      <DependentUpon>ModelDataAccess.tt</DependentUpon>
     </Compile>
-    <Compile Include="PruebasDaniel\ModelDaniel.Designer.cs">
+    <Compile Include="Entity\ModelDataAccess.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDaniel.edmx</DependentUpon>
+      <DependentUpon>ModelDataAccess.edmx</DependentUpon>
     </Compile>
     <Compile Include="Repositories\EventLosgRepository.cs" />
-    <Compile Include="ModelDataBase.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDataBase.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelDataBase.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDataBase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelDataBase.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDataBase.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="personas.cs">
-      <DependentUpon>ModelDataBase.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="retornarusuario_Result.cs">
-      <DependentUpon>ModelDataBase.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="ModelDataBase.edmx">
+    <EntityDeploy Include="Entity\ModelDataAccess.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelDataBase.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelDataAccess.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelDataBase.edmx.diagram">
-      <DependentUpon>ModelDataBase.edmx</DependentUpon>
+    <None Include="Entity\ModelDataAccess.edmx.diagram">
+      <DependentUpon>ModelDataAccess.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <EntityDeploy Include="PruebasDaniel\ModelDaniel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelDaniel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="PruebasDaniel\ModelDaniel.edmx.diagram">
-      <DependentUpon>ModelDaniel.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ModelDataBase.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelDataBase.edmx</DependentUpon>
-      <LastGenOutput>ModelDataBase.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelDataBase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelDataBase.edmx</DependentUpon>
-      <LastGenOutput>ModelDataBase.cs</LastGenOutput>
-    </Content>
-    <Content Include="PruebasDaniel\ModelDaniel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelDaniel.edmx</DependentUpon>
-      <LastGenOutput>ModelDaniel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="PruebasDaniel\ModelDaniel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelDaniel.edmx</DependentUpon>
-      <LastGenOutput>ModelDaniel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -142,6 +92,18 @@
       <Project>{53b42e84-b90c-4791-8fe7-56e87ba09c0c}</Project>
       <Name>ControlTrafico.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entity\ModelDataAccess.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDataAccess.edmx</DependentUpon>
+      <LastGenOutput>ModelDataAccess.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entity\ModelDataAccess.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDataAccess.edmx</DependentUpon>
+      <LastGenOutput>ModelDataAccess.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ControTrafico.Infrastructure.PruebasDaniel
+namespace ControTrafico.Infrastructure.Entity
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PruebaUEntitiesDaniel : DbContext
+    public partial class PruebasEntities1 : DbContext
     {
-        public PruebaUEntitiesDaniel()
-            : base("name=PruebaUEntitiesDaniel")
+        public PruebasEntities1()
+            : base("name=PruebasEntities1")
         {
         }
     

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PruebasModelStoreContainer" CdmEntityContainer="PruebasEntities1">
+    <EntitySetMapping Name="Eventlog">
+      <EntityTypeMapping TypeName="PruebasModel.Eventlog">
+        <MappingFragment StoreEntitySet="Eventlog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idProceso" ColumnName="idProceso" />
+          <ScalarProperty Name="proceso" ColumnName="proceso" />
+          <ScalarProperty Name="Tiempo_Control" ColumnName="Tiempo_Control" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

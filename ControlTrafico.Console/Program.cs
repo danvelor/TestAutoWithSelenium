@@ -9,10 +9,6 @@ using ControlTrafico.Core.Interface;
 using ControlTrafico.Core.Dominio;
 using ControlTrafico.Infrastructure.Repositories;
 
-
-
-
-
 namespace ControlTrafico.Console
 {
     class Program
@@ -29,11 +25,11 @@ namespace ControlTrafico.Console
             {
                 process = "Prueba",
                 Time_Control = DateTime.Now,
-                
+
             };
             _eventLogs.EventLogs_add(_eventLogs.EventObj);
             _eventLogs.EvenLogs_Save(_eventLogs.ListEventLogs);
-            
+
         }
 
         private static void DriverExecute()
@@ -42,8 +38,6 @@ namespace ControlTrafico.Console
             IWebDriver driver = new ChromeDriver();
             try
             {
-
-
                 System.Console.WriteLine("Iniciamos el proceso");
 
                 #region Login
@@ -76,7 +70,6 @@ namespace ControlTrafico.Console
 
                 Task.Delay(1000).Wait();
 
-
                 #region RegionDestino
 
 
@@ -93,7 +86,6 @@ namespace ControlTrafico.Console
                 Task.Delay(1000).Wait();
                 driver.FindElement(By.Id("Busquedaporciudad2_divRegionesxCiudad")).FindElement(By.Id("Busquedaporciudad2_btnescogerregionxciudad")).Click();
                 #endregion
-
 
 
             }

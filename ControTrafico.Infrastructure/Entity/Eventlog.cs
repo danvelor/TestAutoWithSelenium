@@ -7,17 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ControlTrafico.Infrastructure
+namespace ControTrafico.Infrastructure.Entity
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class personas
+    public partial class Eventlog
     {
         public int id { get; set; }
-        public string usuario { get; set; }
-        public string clave { get; set; }
-        public Nullable<int> cedula { get; set; }
-        public string nombre { get; set; }
+        public Nullable<System.Guid> idProceso { get; set; }
+        public string proceso { get; set; }
+        public Nullable<System.DateTime> Tiempo_Control { get; set; }
     }
 }

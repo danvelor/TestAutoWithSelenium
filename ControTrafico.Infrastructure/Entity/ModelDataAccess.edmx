@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PruebaUModelDaniel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="PruebasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Eventlog">
           <Key>
             <PropertyRef Name="id" />
@@ -14,14 +14,14 @@
           <Property Name="proceso" Type="varchar" MaxLength="50" />
           <Property Name="Tiempo_Control" Type="datetime" />
         </EntityType>
-        <EntityContainer Name="PruebaUModelDanielStoreContainer">
+        <EntityContainer Name="PruebasModelStoreContainer">
           <EntitySet Name="Eventlog" EntityType="Self.Eventlog" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="PruebaUModelDaniel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="PruebasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Eventlog">
           <Key>
             <PropertyRef Name="id" />
@@ -31,7 +31,7 @@
           <Property Name="proceso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Tiempo_Control" Type="DateTime" Precision="3" />
         </EntityType>
-        <EntityContainer Name="PruebaUEntitiesDaniel" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="PruebasEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Eventlog" EntityType="Self.Eventlog" />
         </EntityContainer>
       </Schema>
@@ -39,9 +39,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PruebaUModelDanielStoreContainer" CdmEntityContainer="PruebaUEntitiesDaniel">
+        <EntityContainerMapping StorageEntityContainer="PruebasModelStoreContainer" CdmEntityContainer="PruebasEntities1">
           <EntitySetMapping Name="Eventlog">
-            <EntityTypeMapping TypeName="PruebaUModelDaniel.Eventlog">
+            <EntityTypeMapping TypeName="PruebasModel.Eventlog">
               <MappingFragment StoreEntitySet="Eventlog">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idProceso" ColumnName="idProceso" />
