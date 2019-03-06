@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTrafico.Console", "ControlTrafico\ControlTrafico.Console.csproj", "{32C6C8A4-EB0F-4637-83B3-7FF2DD99B748}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTraficol.Infrastructure", "ControTrafico.Infrastructure\ControlTraficol.Infrastructure.csproj", "{E9B39953-D789-4B98-834D-556C58938E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTrafico.Console", "ControlTrafico.Console\ControlTrafico.Console.csproj", "{32C6C8A4-EB0F-4637-83B3-7FF2DD99B748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTrafico.Core", "ControlTrafico.Core\ControlTrafico.Core.csproj", "{53B42E84-B90C-4791-8FE7-56E87BA09C0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B39953-D789-4B98-834D-556C58938E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B39953-D789-4B98-834D-556C58938E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B39953-D789-4B98-834D-556C58938E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B39953-D789-4B98-834D-556C58938E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{32C6C8A4-EB0F-4637-83B3-7FF2DD99B748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{32C6C8A4-EB0F-4637-83B3-7FF2DD99B748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32C6C8A4-EB0F-4637-83B3-7FF2DD99B748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32C6C8A4-EB0F-4637-83B3-7FF2DD99B748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B42E84-B90C-4791-8FE7-56E87BA09C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B42E84-B90C-4791-8FE7-56E87BA09C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B42E84-B90C-4791-8FE7-56E87BA09C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B42E84-B90C-4791-8FE7-56E87BA09C0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,5 @@
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Core\bin\Debug\ControlTrafico.Core.dll
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Core\bin\Debug\ControlTrafico.Core.pdb
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Core\obj\Debug\ControlTrafico.Core.csprojResolveAssemblyReference.cache
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Core\obj\Debug\ControlTrafico.Core.dll
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Core\obj\Debug\ControlTrafico.Core.pdb

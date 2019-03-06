@@ -1,8 +1,0 @@
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\bin\Debug\ControlTrafico.exe.config
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\bin\Debug\ControlTrafico.exe
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\bin\Debug\ControlTrafico.pdb
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\bin\Debug\WebDriver.dll
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\bin\Debug\WebDriver.xml
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\obj\Debug\ControlTrafico.csprojResolveAssemblyReference.cache
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\obj\Debug\ControlTrafico.exe
-E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\ControlTrafico\ControlTrafico\obj\Debug\ControlTrafico.pdb
