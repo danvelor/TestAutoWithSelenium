@@ -14,7 +14,7 @@ namespace ControlTrafico.Core.Dominio
 
         public Event()
         {
-            this.idProcess = new Guid();
+            this.idProcess = Guid.NewGuid();
         }
 
         public Event(Guid id)

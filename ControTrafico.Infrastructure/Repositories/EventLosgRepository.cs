@@ -22,7 +22,6 @@ namespace ControlTrafico.Infrastructure.Repositories
             contextBD1 = new PruebasEntities1();
             contextBD1.Eventlog.AddRange(lisEventlogDto);
             contextBD1.SaveChanges();
-
         }
 
         private List<ControTrafico.Infrastructure.Entity.Eventlog> DtoEventlog(List<Core.Dominio.Event> listEventlog)
@@ -39,7 +38,6 @@ namespace ControlTrafico.Infrastructure.Repositories
                 eventlog.Tiempo_Control = item.Time_Control;
                 ListDtoEventlog.Add(eventlog);
             }
-
 
             return ListDtoEventlog;
         }
