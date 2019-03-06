@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using ControlTrafico.Console.Interface;
-
+using ControlTrafico.Core.Interface;
+using ControlTrafico.Core.Dominio;
+using ControlTrafico.Infrastructure.Repositories;
 
 
 
@@ -18,20 +19,30 @@ namespace ControlTrafico.Console
     {
         static void Main(string[] args)
         {
-            //DriverEjecutera();
+            //DriverExecute();
 
-            //IRegistrosEventos iRegistrosEventos = 
+            IEventLogs iEventLogs = new EventLosgRepository();
+            EventLogs _eventLogs = new EventLogs(iEventLogs);
 
 
+            _eventLogs.EventObj = new Event()
+            {
+                process = "Prueba",
+                Time_Control = DateTime.Now,
+                
+            };
+            _eventLogs.EventLogs_add(_eventLogs.EventObj);
+            _eventLogs.EvenLogs_Save(_eventLogs.ListEventLogs);
+            
         }
 
-        private static void DriverEjecutera()
+        private static void DriverExecute()
         {
 
             IWebDriver driver = new ChromeDriver();
             try
             {
-                
+
 
                 System.Console.WriteLine("Iniciamos el proceso");
 
@@ -84,7 +95,7 @@ namespace ControlTrafico.Console
                 #endregion
 
 
-                
+
             }
             catch (Exception ex)
             {

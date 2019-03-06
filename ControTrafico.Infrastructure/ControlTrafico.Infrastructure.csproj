@@ -49,7 +49,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="PruebasDaniel\Eventlog.cs">
+      <DependentUpon>ModelDaniel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PruebasDaniel\ModelDaniel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDaniel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PruebasDaniel\ModelDaniel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDaniel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PruebasDaniel\ModelDaniel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDaniel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\EventLosgRepository.cs" />
     <Compile Include="ModelDataBase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -83,6 +101,13 @@
       <DependentUpon>ModelDataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="PruebasDaniel\ModelDaniel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDaniel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PruebasDaniel\ModelDaniel.edmx.diagram">
+      <DependentUpon>ModelDaniel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelDataBase.Context.tt">
@@ -94,6 +119,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelDataBase.edmx</DependentUpon>
       <LastGenOutput>ModelDataBase.cs</LastGenOutput>
+    </Content>
+    <Content Include="PruebasDaniel\ModelDaniel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDaniel.edmx</DependentUpon>
+      <LastGenOutput>ModelDaniel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PruebasDaniel\ModelDaniel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDaniel.edmx</DependentUpon>
+      <LastGenOutput>ModelDaniel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

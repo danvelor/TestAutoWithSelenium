@@ -22,3 +22,12 @@ E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\
 E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\ControlTrafico.pdb
 E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\WebDriver.dll
 E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\WebDriver.xml
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\ControlTrafico.Core.dll
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\ControTrafico.Infrastructure.dll
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\EntityFramework.dll
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\ControlTrafico.Core.pdb
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\ControTrafico.Infrastructure.pdb
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\ControTrafico.Infrastructure.dll.config
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\EntityFramework.xml
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\EntityFramework.SqlServer.dll
+E:\Soporte\HU\3097-2.1 Argos - Diagnóstico página web & CT\ControlTraficoTest\TestAutoWithSelenium\ControlTrafico.Console\bin\Debug\EntityFramework.SqlServer.xml

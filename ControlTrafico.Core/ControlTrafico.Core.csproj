@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Eventlog.cs" />
+    <Compile Include="Dominio\Event.cs" />
     <Compile Include="Dominio\Personas.cs" />
-    <Compile Include="Dominio\RegistrosEventos.cs" />
-    <Compile Include="Interface\IRegistrosEventos.cs" />
+    <Compile Include="Dominio\EventLogs.cs" />
+    <Compile Include="Interface\IEventLogs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
