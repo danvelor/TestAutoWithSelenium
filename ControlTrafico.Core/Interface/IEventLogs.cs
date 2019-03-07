@@ -12,5 +12,8 @@ namespace ControlTrafico.Core.Interface
 
         void SaveEventlog(List<Event> ListRegistrosEventos);
 
+
+        List<Event> EventList();
+
     }
 }

@@ -10,8 +10,9 @@ namespace ControlTrafico.Core.Dominio
     {
         public Guid idProcess { get; set; }
         public string process { get; set; }
+        public string usuario { get; set; }
         public DateTime Time_Control { get; set; }
-
+        
         public Event()
         {
             this.idProcess = Guid.NewGuid();

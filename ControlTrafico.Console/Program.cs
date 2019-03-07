@@ -8,6 +8,7 @@ using OpenQA.Selenium.Chrome;
 using ControlTrafico.Core.Interface;
 using ControlTrafico.Core.Dominio;
 using ControlTrafico.Infrastructure.Repositories;
+using ControlTrafico.Core.Servicio;
 
 namespace ControlTrafico.Console
 {
@@ -18,18 +19,10 @@ namespace ControlTrafico.Console
             //DriverExecute();
 
             IEventLogs iEventLogs = new EventLosgRepository();
-            EventLogs _eventLogs = new EventLogs(iEventLogs);
-
-
-            _eventLogs.EventObj = new Event()
-            {
-                process = "Prueba",
-                Time_Control = DateTime.Now,
-
-            };
-            _eventLogs.EventLogs_add(_eventLogs.EventObj);
-            _eventLogs.EvenLogs_Save(_eventLogs.ListEventLogs);
-
+            ServiceEvent service = new ServiceEvent(iEventLogs);
+            service.Save_Event();
+            
+            
         }
 
         private static void DriverExecute()

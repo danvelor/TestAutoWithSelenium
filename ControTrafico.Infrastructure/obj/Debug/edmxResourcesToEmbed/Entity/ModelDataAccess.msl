@@ -4,10 +4,11 @@
     <EntitySetMapping Name="Eventlog">
       <EntityTypeMapping TypeName="PruebasModel.Eventlog">
         <MappingFragment StoreEntitySet="Eventlog">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idProceso" ColumnName="idProceso" />
-          <ScalarProperty Name="proceso" ColumnName="proceso" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
           <ScalarProperty Name="Tiempo_Control" ColumnName="Tiempo_Control" />
+          <ScalarProperty Name="proceso" ColumnName="proceso" />
+          <ScalarProperty Name="idProceso" ColumnName="idProceso" />
+          <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

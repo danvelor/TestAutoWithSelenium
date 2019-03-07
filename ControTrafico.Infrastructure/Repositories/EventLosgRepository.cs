@@ -24,6 +24,14 @@ namespace ControlTrafico.Infrastructure.Repositories
             contextBD1.SaveChanges();
         }
 
+
+        public List<Core.Dominio.Event> EventList() {
+
+            List<Core.Dominio.Event> ListEvent = new List<Core.Dominio.Event>();
+            ListEvent = contextBD1.Eventlog.Select(x => new Core.Dominio.Event { usuario = x.usuario}).ToList();
+            return ListEvent;
+        }
+
         private List<ControTrafico.Infrastructure.Entity.Eventlog> DtoEventlog(List<Core.Dominio.Event> listEventlog)
         {
 
@@ -36,10 +44,16 @@ namespace ControlTrafico.Infrastructure.Repositories
                 eventlog.idProceso = item.idProcess;
                 eventlog.proceso = item.process;
                 eventlog.Tiempo_Control = item.Time_Control;
+                eventlog.usuario = item.usuario;
                 ListDtoEventlog.Add(eventlog);
             }
 
             return ListDtoEventlog;
         }
+
+
+        
+
+
     }
 }

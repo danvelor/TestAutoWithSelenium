@@ -18,5 +18,6 @@ namespace ControTrafico.Infrastructure.Entity
         public Nullable<System.Guid> idProceso { get; set; }
         public string proceso { get; set; }
         public Nullable<System.DateTime> Tiempo_Control { get; set; }
+        public string usuario { get; set; }
     }
 }

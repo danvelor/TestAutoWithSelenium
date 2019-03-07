@@ -8,6 +8,7 @@
     <Property Name="idProceso" Type="uniqueidentifier" />
     <Property Name="proceso" Type="varchar" MaxLength="50" />
     <Property Name="Tiempo_Control" Type="datetime" />
+    <Property Name="usuario" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="PruebasModelStoreContainer">
     <EntitySet Name="Eventlog" EntityType="Self.Eventlog" Schema="dbo" store:Type="Tables" />

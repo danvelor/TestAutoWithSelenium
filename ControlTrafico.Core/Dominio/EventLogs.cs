@@ -11,8 +11,7 @@ namespace ControlTrafico.Core.Dominio
     {
        
         public List<Event> ListEventLogs { get; set; }
-        public Event EventObj { get; set; }
-
+       
         public IEventLogs iEventLogs { get; set; }
 
         public EventLogs( IEventLogs iEventLogs)
@@ -27,8 +26,13 @@ namespace ControlTrafico.Core.Dominio
 
         }
 
-        public void EvenLogs_Save(List<Event> listEventlog) {
-            iEventLogs.SaveEventlog(listEventlog);
+        public void EvenLogs_Save() {
+
+            if (ListEventLogs.Count > 0)
+            {
+                iEventLogs.SaveEventlog(ListEventLogs);
+            }
+            
         }
         
     }
