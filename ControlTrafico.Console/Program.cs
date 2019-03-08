@@ -20,9 +20,11 @@ namespace ControlTrafico.Console
             //Inicio
             IEventLogs iEventLogs = new EventLosgRepository();
             ServiceEvent service = new ServiceEvent(iEventLogs);
+
+            service.Insert_Event("Menu","Juan");
+            service.Insert_Event("Menu1", "Juan");
             service.Save_Event();
-            
-            
+
         }
 
         private static void DriverExecute()

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ControlTrafico.Core.Interface;
-using ControlTrafico.Core.Dominio;
-using ControTrafico.Infrastructure;
 using ControTrafico.Infrastructure.Entity;
 
 namespace ControlTrafico.Infrastructure.Repositories
@@ -28,7 +23,7 @@ namespace ControlTrafico.Infrastructure.Repositories
         public List<Core.Dominio.Event> EventList() {
 
             List<Core.Dominio.Event> ListEvent = new List<Core.Dominio.Event>();
-            ListEvent = contextBD1.Eventlog.Select(x => new Core.Dominio.Event { usuario = x.usuario}).ToList();
+            ListEvent = contextBD1.Eventlog.Select(x => new Core.Dominio.Event { user = x.usuario}).ToList();
             return ListEvent;
         }
 
@@ -44,16 +39,12 @@ namespace ControlTrafico.Infrastructure.Repositories
                 eventlog.idProceso = item.idProcess;
                 eventlog.proceso = item.process;
                 eventlog.Tiempo_Control = item.Time_Control;
-                eventlog.usuario = item.usuario;
+                eventlog.usuario = item.user;
                 ListDtoEventlog.Add(eventlog);
             }
 
             return ListDtoEventlog;
         }
-
-
         
-
-
     }
 }
