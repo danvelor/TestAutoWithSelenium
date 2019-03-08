@@ -17,7 +17,7 @@ namespace ControlTrafico.Console
         static void Main(string[] args)
         {
             //DriverExecute();
-
+            //Inicio
             IEventLogs iEventLogs = new EventLosgRepository();
             ServiceEvent service = new ServiceEvent(iEventLogs);
             service.Save_Event();
